@@ -1,0 +1,38 @@
+local HitboxExpanderHead = {
+    Size = 7, -- Размер хитбокса головы
+    Enabled = false,
+    Transparency = 0.5, -- Прозрачность хитбокса
+    Color = Color3.fromRGB(84, 101, 255) -- Цвет хитбокса
+}
+
+local OriginalSizes = {}
+
+-- Функция для увеличения хитбокса головы
+local function expandHitbox(model, partName, size, transparency)
+    local part = model:FindFirstChild(partName)
+    if part then
+        if not OriginalSizes[model] then
+            OriginalSizes[model] = {}
+        end
+
+        if not OriginalSizes[model][part.Name] then
+            OriginalSizes[model][part.Name] = part.Size
+        end
+
+        part.Size = Vector3.new(size, size, size)
+        part.Transparency = transparency
+        part.CanCollide = false
+        part.Color = HitboxExpanderHead.Color
+    end
+end
+
+-- Функция для сброса хитбокса головы
+local function resetHitbox(model, partName)
+    local part = model:FindFirstChild(partName)
+    if part and OriginalSizes[model] and OriginalSizes[model][part.Name] then
+        part.Size = OriginalSizes[model][part.Name]
+        part.Transparency = 0 -- Возвращаем прозрачность
+        part.CanCollide = true
+        OriginalSizes[model][part.Name] = nil
+    end
+end
