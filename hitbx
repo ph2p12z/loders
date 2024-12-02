@@ -32,7 +32,7 @@ if (not _G.Loaded) then
 			local Part = Model[Hitbox.Part];
 			Part.Size = OriginalSizes[Hitbox.Part];
 			Part.Transparency = 0;
-			Part.CanCollide = true;
+			Part.CanCollide = false;
 		end
 	end
 
