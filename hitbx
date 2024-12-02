@@ -1,38 +1,47 @@
-local HitboxExpanderHead = {
-    Size = 7, -- Размер хитбокса головы
-    Enabled = false,
-    Transparency = 0.5, -- Прозрачность хитбокса
-    Color = Color3.fromRGB(84, 101, 255) -- Цвет хитбокса
-}
-
-local OriginalSizes = {}
-
--- Функция для увеличения хитбокса головы
-local function expandHitbox(model, partName, size, transparency)
-    local part = model:FindFirstChild(partName)
-    if part then
-        if not OriginalSizes[model] then
-            OriginalSizes[model] = {}
-        end
-
-        if not OriginalSizes[model][part.Name] then
-            OriginalSizes[model][part.Name] = part.Size
-        end
-
-        part.Size = Vector3.new(size, size, size)
-        part.Transparency = transparency
-        part.CanCollide = false
-        part.Color = HitboxExpanderHead.Color
-    end
+if (not _G.Flags) then
+	_G.Flags = {
+		HitboxExpander = {
+			Size = 7;
+			Enabled = true;
+			Transparency = .7; 
+			Part = "Head"; 
+		};
+	};
 end
 
--- Функция для сброса хитбокса головы
-local function resetHitbox(model, partName)
-    local part = model:FindFirstChild(partName)
-    if part and OriginalSizes[model] and OriginalSizes[model][part.Name] then
-        part.Size = OriginalSizes[model][part.Name]
-        part.Transparency = 0 -- Возвращаем прозрачность
-        part.CanCollide = true
-        OriginalSizes[model][part.Name] = nil
-    end
+if (not _G.Loaded) then
+	_G.Loaded = true;
+	local ReplicatedStorage = game:GetService("ReplicatedStorage");
+	local RunService = game:GetService("RunService");
+	local IgnoreFolder = workspace:WaitForChild("Ignore");
+	local OriginalSizes = {};
+
+	for i,v in pairs(ReplicatedStorage.Shared.entities.Player.Model:GetChildren()) do
+		if v:IsA("BasePart") then
+			OriginalSizes[v.Name] = v.Size;
+		end
+	end
+
+	function HitboxExpander(Model,Size,Hitbox)
+		if (Hitbox.Enabled) then
+			local Part = Model[Hitbox.Part];
+			Part.Size = Vector3.new(Size,Size,Size);
+			Part.Transparency = Hitbox.Transparency;
+			Part.CanCollide = false;
+		else
+			local Part = Model[Hitbox.Part];
+			Part.Size = OriginalSizes[Hitbox.Part];
+			Part.Transparency = 0;
+			Part.CanCollide = true;
+		end
+	end
+
+	RunService.Heartbeat:Connect(function()
+		local Hitbox = _G.Flags.HitboxExpander;
+		for i,v in pairs(workspace:GetChildren()) do
+			if (v.ClassName == "Model" and v:FindFirstChild("Head") and v.PrimaryPart ~= nil) then
+				HitboxExpander(v, Hitbox.Size, Hitbox);
+			end
+		end
+	end)
 end
