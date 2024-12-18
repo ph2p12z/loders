@@ -11,7 +11,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 
 PlayerInfoFrame.Parent = ScreenGui
-PlayerInfoFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+PlayerInfoFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 PlayerInfoFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
 PlayerInfoFrame.BorderSizePixel = 2
 PlayerInfoFrame.Position = UDim2.new(0.02, 0, 0.2, 0) 
