@@ -1,0 +1,1475 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Bottom = Instance.new("Frame")
+local Image = Instance.new("ImageLabel")
+local Title = Instance.new("Frame")
+local TitleLabel = Instance.new("TextLabel")
+local TabsButtons = Instance.new("Frame")
+local Settings = Instance.new("TextButton")
+local Misc = Instance.new("TextButton")
+local MiscTab = Instance.new("Frame")
+local BloodToggle = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local LootAllToggle = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local LootAllKeybind = Instance.new("TextButton")
+local JumpshootToggle = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local RemgrassToggle = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local XrayToggle = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local TransparencySlider = Instance.new("Frame")
+local Transparency = Instance.new("TextLabel")
+local SlidePart = Instance.new("Frame")
+local XrayKeybind = Instance.new("TextButton")
+local SpeedSlider = Instance.new("Frame")
+local Speed = Instance.new("TextLabel")
+local SlidePart_2 = Instance.new("Frame")
+local AtvKeybind = Instance.new("TextButton")
+local AtvToggle = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local Visuals = Instance.new("TextButton")
+local VisualsTab = Instance.new("Frame")
+local BoxToggle = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local DistanceToggle = Instance.new("TextButton")
+local TextLabel_8 = Instance.new("TextLabel")
+local WeaponToggle = Instance.new("TextButton")
+local TextLabel_9 = Instance.new("TextLabel")
+local CrosshairToggle = Instance.new("TextButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local SpinToggle = Instance.new("TextButton")
+local TextLabel_11 = Instance.new("TextLabel")
+local BulletToggle = Instance.new("TextButton")
+local TextLabel_12 = Instance.new("TextLabel")
+local LifetimeSlider = Instance.new("Frame")
+local Lifetime = Instance.new("TextLabel")
+local SlidePart_3 = Instance.new("Frame")
+local AmbientButton = Instance.new("TextButton")
+local Combat = Instance.new("TextButton")
+local CombatTab = Instance.new("Frame")
+local XSlider = Instance.new("Frame")
+local X = Instance.new("TextLabel")
+local SlidePart_4 = Instance.new("Frame")
+local YSlider = Instance.new("Frame")
+local Y = Instance.new("TextLabel")
+local SlidePart_5 = Instance.new("Frame")
+local ZSlider = Instance.new("Frame")
+local Z = Instance.new("TextLabel")
+local SlidePart_6 = Instance.new("Frame")
+local LongneckSlider = Instance.new("Frame")
+local LN = Instance.new("TextLabel")
+local SlidePart_7 = Instance.new("Frame")
+local SilentToggle = Instance.new("TextButton")
+local SilentLabel = Instance.new("TextLabel")
+local ShowFovToggle = Instance.new("TextButton")
+local FovToggle = Instance.new("TextLabel")
+local FovSlider = Instance.new("Frame")
+local Fov = Instance.new("TextLabel")
+local SlidePart_8 = Instance.new("Frame")
+local LongneckKeybind = Instance.new("TextButton")
+local HitboxToggle = Instance.new("TextButton")
+local TextLabel_13 = Instance.new("TextLabel")
+local LongneckToggle = Instance.new("TextButton")
+local LongneckLabel = Instance.new("TextLabel")
+local Private = Instance.new("TextButton")
+local PrivateTab = Instance.new("Frame")
+local FirerateSlider = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local SlidePart_9 = Instance.new("Frame")
+local SpreadSlider = Instance.new("Frame")
+local label_2 = Instance.new("TextLabel")
+local SlidePart_10 = Instance.new("Frame")
+local RecoilSlider = Instance.new("Frame")
+local label_3 = Instance.new("TextLabel")
+local SlidePart_11 = Instance.new("Frame")
+local XoffsetSlider = Instance.new("Frame")
+local label_4 = Instance.new("TextLabel")
+local SlidePart_12 = Instance.new("Frame")
+local Yoffset = Instance.new("Frame")
+local label_5 = Instance.new("TextLabel")
+local SlidePart_13 = Instance.new("Frame")
+local zoffsetSlider = Instance.new("Frame")
+local label_6 = Instance.new("TextLabel")
+local SlidePart_14 = Instance.new("Frame")
+local ModelChangerToggle = Instance.new("TextButton")
+local Modelchanger = Instance.new("TextLabel")
+local HitboxOveriderToggle = Instance.new("TextButton")
+local overrider = Instance.new("TextLabel")
+local AspectRatioToggle = Instance.new("TextButton")
+local ratio = Instance.new("TextLabel")
+local ratioSlider = Instance.new("Frame")
+local label_7 = Instance.new("TextLabel")
+local SlidePart_15 = Instance.new("Frame")
+local NoSlowdownToggle = Instance.new("TextButton")
+local noslowdown = Instance.new("TextLabel")
+
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.new(0.941177, 0.262745, 0.862745)
+Main.BorderColor3 = Color3.new(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.156022355, 0, -8.47710524e-08, 0)
+Main.Size = UDim2.new(0, 465, 0, 359)
+
+Bottom.Name = "Bottom"
+Bottom.Parent = Main
+Bottom.BackgroundColor3 = Color3.new(0.647059, 0.192157, 0.533333)
+Bottom.BorderColor3 = Color3.new(0, 0, 0)
+Bottom.BorderSizePixel = 0
+Bottom.Position = UDim2.new(0, 0, 0.0769230798, 0)
+Bottom.Size = UDim2.new(0, 66, 0, 331)
+
+Image.Name = "Image"
+Image.Parent = Bottom
+Image.BackgroundColor3 = Color3.new(1, 1, 1)
+Image.BorderColor3 = Color3.new(0, 0, 0)
+Image.BorderSizePixel = 0
+Image.Position = UDim2.new(0, 0, -0.000883995614, 0)
+Image.Size = UDim2.new(0, 66, 0, 58)
+Image.Image = "http://www.roblox.com/asset/?id=11104447788"
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.new(0.647059, 0.192157, 0.533333)
+Title.BorderColor3 = Color3.new(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 465, 0, 26)
+
+TitleLabel.Name = "TitleLabel"
+TitleLabel.Parent = Title
+TitleLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TitleLabel.BackgroundTransparency = 1
+TitleLabel.BorderColor3 = Color3.new(0, 0, 0)
+TitleLabel.BorderSizePixel = 0
+TitleLabel.Position = UDim2.new(0.286324799, 0, -0.5, 0)
+TitleLabel.Size = UDim2.new(0, 200, 0, 50)
+TitleLabel.Font = Enum.Font.Gotham
+TitleLabel.Text = "Axis.xyz|Trident Survival"
+TitleLabel.TextColor3 = Color3.new(1, 1, 1)
+TitleLabel.TextSize = 16
+
+TabsButtons.Name = "TabsButtons"
+TabsButtons.Parent = Main
+TabsButtons.BackgroundColor3 = Color3.new(1, 1, 1)
+TabsButtons.BackgroundTransparency = 1
+TabsButtons.BorderColor3 = Color3.new(0, 0, 0)
+TabsButtons.BorderSizePixel = 0
+TabsButtons.Position = UDim2.new(0.518709719, 0, 0.0752089173, 0)
+TabsButtons.Size = UDim2.new(0, 222, 0, 26)
+
+Settings.Name = "Settings"
+Settings.Parent = TabsButtons
+Settings.BackgroundColor3 = Color3.new(1, 1, 1)
+Settings.BackgroundTransparency = 1
+Settings.BorderColor3 = Color3.new(0, 0, 0)
+Settings.Position = UDim2.new(0.761709154, 0, -0.295277536, 0)
+Settings.Size = UDim2.new(0, 53, 0, 30)
+Settings.Font = Enum.Font.Ubuntu
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.new(1, 1, 1)
+Settings.TextSize = 14
+
+Misc.Name = "Misc"
+Misc.Parent = TabsButtons
+Misc.BackgroundColor3 = Color3.new(1, 1, 1)
+Misc.BackgroundTransparency = 1
+Misc.BorderColor3 = Color3.new(0, 0, 0)
+Misc.Position = UDim2.new(0.563776374, 0, -0.295277536, 0)
+Misc.Size = UDim2.new(0, 53, 0, 30)
+Misc.Font = Enum.Font.Ubuntu
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.new(1, 1, 1)
+Misc.TextSize = 14
+
+MiscTab.Name = "MiscTab"
+MiscTab.Parent = Misc
+MiscTab.BackgroundColor3 = Color3.new(0.458824, 0.0235294, 0.360784)
+MiscTab.BackgroundTransparency = 0.25
+MiscTab.BorderColor3 = Color3.new(0, 0, 0)
+MiscTab.BorderSizePixel = 0
+MiscTab.Position = UDim2.new(-5.67005873, 0, 1, 0)
+MiscTab.Size = UDim2.new(0, 390, 0, 309)
+MiscTab.Visible = false
+
+BloodToggle.Name = "BloodToggle"
+BloodToggle.Parent = MiscTab
+BloodToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+BloodToggle.BorderColor3 = Color3.new(0, 0, 0)
+BloodToggle.Position = UDim2.new(0.0205128212, 0, 0.0906148851, 0)
+BloodToggle.Size = UDim2.new(0, 21, 0, 18)
+BloodToggle.Font = Enum.Font.SourceSans
+BloodToggle.Text = " "
+BloodToggle.TextColor3 = Color3.new(0, 0, 0)
+BloodToggle.TextSize = 14
+
+TextLabel.Parent = BloodToggle
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.333333343, 0, -0.833333313, 0)
+TextLabel.Size = UDim2.new(0, 155, 0, 48)
+TextLabel.Font = Enum.Font.Sarpanch
+TextLabel.Text = "Remove Blood"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 18
+
+LootAllToggle.Name = "LootAllToggle"
+LootAllToggle.Parent = MiscTab
+LootAllToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+LootAllToggle.BorderColor3 = Color3.new(0, 0, 0)
+LootAllToggle.Position = UDim2.new(0.551282048, 0, 0.284789652, 0)
+LootAllToggle.Size = UDim2.new(0, 21, 0, 18)
+LootAllToggle.Font = Enum.Font.SourceSans
+LootAllToggle.Text = " "
+LootAllToggle.TextColor3 = Color3.new(0, 0, 0)
+LootAllToggle.TextSize = 14
+
+TextLabel_2.Parent = LootAllToggle
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(1.6807512, 0, -0.833333313, 0)
+TextLabel_2.Size = UDim2.new(0, 56, 0, 48)
+TextLabel_2.Font = Enum.Font.Sarpanch
+TextLabel_2.Text = "Loot all"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 18
+
+LootAllKeybind.Name = "LootAllKeybind"
+LootAllKeybind.Parent = MiscTab
+LootAllKeybind.BackgroundColor3 = Color3.new(1, 1, 1)
+LootAllKeybind.BackgroundTransparency = 1
+LootAllKeybind.BorderColor3 = Color3.new(0, 0, 0)
+LootAllKeybind.BorderSizePixel = 0
+LootAllKeybind.Position = UDim2.new(0.921577334, 0, 0.229773462, 0)
+LootAllKeybind.Size = UDim2.new(0, 30, 0, 50)
+LootAllKeybind.Font = Enum.Font.SourceSans
+LootAllKeybind.Text = "[...]"
+LootAllKeybind.TextColor3 = Color3.new(1, 1, 1)
+LootAllKeybind.TextSize = 21
+
+JumpshootToggle.Name = "JumpshootToggle"
+JumpshootToggle.Parent = MiscTab
+JumpshootToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+JumpshootToggle.BorderColor3 = Color3.new(0, 0, 0)
+JumpshootToggle.Position = UDim2.new(0.551282048, 0, 0.372168273, 0)
+JumpshootToggle.Size = UDim2.new(0, 21, 0, 18)
+JumpshootToggle.Font = Enum.Font.SourceSans
+JumpshootToggle.Text = " "
+JumpshootToggle.TextColor3 = Color3.new(0, 0, 0)
+JumpshootToggle.TextSize = 14
+
+TextLabel_3.Parent = JumpshootToggle
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(1.6807512, 0, -0.833333313, 0)
+TextLabel_3.Size = UDim2.new(0, 78, 0, 48)
+TextLabel_3.Font = Enum.Font.Sarpanch
+TextLabel_3.Text = "Jumpshoot"
+TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_3.TextSize = 18
+
+RemgrassToggle.Name = "RemgrassToggle"
+RemgrassToggle.Parent = MiscTab
+RemgrassToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+RemgrassToggle.BorderColor3 = Color3.new(0, 0, 0)
+RemgrassToggle.Position = UDim2.new(0.0205128212, 0, 0.177993521, 0)
+RemgrassToggle.Size = UDim2.new(0, 21, 0, 18)
+RemgrassToggle.Font = Enum.Font.SourceSans
+RemgrassToggle.Text = " "
+RemgrassToggle.TextColor3 = Color3.new(0, 0, 0)
+RemgrassToggle.TextSize = 14
+
+TextLabel_4.Parent = RemgrassToggle
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(1.6807512, 0, -0.833333313, 0)
+TextLabel_4.Size = UDim2.new(0, 100, 0, 48)
+TextLabel_4.Font = Enum.Font.Sarpanch
+TextLabel_4.Text = "Remove Grass"
+TextLabel_4.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_4.TextSize = 18
+
+XrayToggle.Name = "XrayToggle"
+XrayToggle.Parent = MiscTab
+XrayToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+XrayToggle.BorderColor3 = Color3.new(0, 0, 0)
+XrayToggle.Position = UDim2.new(0.0205128212, 0, 0.601941764, 0)
+XrayToggle.Size = UDim2.new(0, 21, 0, 18)
+XrayToggle.Font = Enum.Font.SourceSans
+XrayToggle.Text = " "
+XrayToggle.TextColor3 = Color3.new(0, 0, 0)
+XrayToggle.TextSize = 14
+
+TextLabel_5.Parent = XrayToggle
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(1.6807512, 0, -0.833333313, 0)
+TextLabel_5.Size = UDim2.new(0, 32, 0, 48)
+TextLabel_5.Font = Enum.Font.Sarpanch
+TextLabel_5.Text = "Xray"
+TextLabel_5.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_5.TextSize = 18
+
+TransparencySlider.Name = "TransparencySlider"
+TransparencySlider.Parent = MiscTab
+TransparencySlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+TransparencySlider.BorderColor3 = Color3.new(0, 0, 0)
+TransparencySlider.Position = UDim2.new(0.0205128212, 0, 0.747572839, 0)
+TransparencySlider.Size = UDim2.new(0, 182, 0, 17)
+
+Transparency.Name = "Transparency"
+Transparency.Parent = TransparencySlider
+Transparency.BackgroundColor3 = Color3.new(1, 1, 1)
+Transparency.BackgroundTransparency = 1
+Transparency.BorderColor3 = Color3.new(0, 0, 0)
+Transparency.BorderSizePixel = 0
+Transparency.Position = UDim2.new(0.0934065953, 0, 0, 0)
+Transparency.Size = UDim2.new(0, 50, 0, -24)
+Transparency.Font = Enum.Font.SourceSans
+Transparency.Text = "Transparency"
+Transparency.TextColor3 = Color3.new(1, 1, 1)
+Transparency.TextSize = 20
+
+SlidePart.Name = "SlidePart"
+SlidePart.Parent = TransparencySlider
+SlidePart.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart.BorderSizePixel = 0
+SlidePart.Size = UDim2.new(0, 0, 0, 17)
+
+XrayKeybind.Name = "XrayKeybind"
+XrayKeybind.Parent = MiscTab
+XrayKeybind.BackgroundColor3 = Color3.new(1, 1, 1)
+XrayKeybind.BackgroundTransparency = 1
+XrayKeybind.BorderColor3 = Color3.new(0, 0, 0)
+XrayKeybind.BorderSizePixel = 0
+XrayKeybind.Position = UDim2.new(0.41644913, 0, 0.550161839, 0)
+XrayKeybind.Size = UDim2.new(0, 30, 0, 50)
+XrayKeybind.Font = Enum.Font.SourceSans
+XrayKeybind.Text = "[...]"
+XrayKeybind.TextColor3 = Color3.new(1, 1, 1)
+XrayKeybind.TextSize = 21
+
+SpeedSlider.Name = "SpeedSlider"
+SpeedSlider.Parent = MiscTab
+SpeedSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+SpeedSlider.BorderColor3 = Color3.new(0, 0, 0)
+SpeedSlider.Position = UDim2.new(0.551282048, 0, 0.20064725, 0)
+SpeedSlider.Size = UDim2.new(0, 170, 0, 17)
+
+Speed.Name = "Speed"
+Speed.Parent = SpeedSlider
+Speed.BackgroundColor3 = Color3.new(1, 1, 1)
+Speed.BackgroundTransparency = 1
+Speed.BorderColor3 = Color3.new(0, 0, 0)
+Speed.BorderSizePixel = 0
+Speed.Size = UDim2.new(0, 50, 0, -22)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.new(1, 1, 1)
+Speed.TextSize = 20
+
+SlidePart_2.Name = "SlidePart"
+SlidePart_2.Parent = SpeedSlider
+SlidePart_2.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_2.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_2.BorderSizePixel = 0
+SlidePart_2.Size = UDim2.new(0, 0, 0, 17)
+
+AtvKeybind.Name = "AtvKeybind"
+AtvKeybind.Parent = MiscTab
+AtvKeybind.BackgroundColor3 = Color3.new(1, 1, 1)
+AtvKeybind.BackgroundTransparency = 1
+AtvKeybind.BorderColor3 = Color3.new(0, 0, 0)
+AtvKeybind.BorderSizePixel = 0
+AtvKeybind.Position = UDim2.new(0.921577334, 0, -0.0129449842, 0)
+AtvKeybind.Size = UDim2.new(0, 30, 0, 50)
+AtvKeybind.Font = Enum.Font.SourceSans
+AtvKeybind.Text = "[...]"
+AtvKeybind.TextColor3 = Color3.new(1, 1, 1)
+AtvKeybind.TextSize = 21
+
+AtvToggle.Name = "AtvToggle"
+AtvToggle.Parent = MiscTab
+AtvToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+AtvToggle.BorderColor3 = Color3.new(0, 0, 0)
+AtvToggle.Position = UDim2.new(0.551282048, 0, 0.0550161824, 0)
+AtvToggle.Size = UDim2.new(0, 21, 0, 18)
+AtvToggle.Font = Enum.Font.SourceSans
+AtvToggle.Text = " "
+AtvToggle.TextColor3 = Color3.new(0, 0, 0)
+AtvToggle.TextSize = 14
+
+TextLabel_6.Parent = AtvToggle
+TextLabel_6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_6.BackgroundTransparency = 1
+TextLabel_6.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(1.6807512, 0, -0.833333313, 0)
+TextLabel_6.Size = UDim2.new(0, 32, 0, 48)
+TextLabel_6.Font = Enum.Font.Sarpanch
+TextLabel_6.Text = "Atv Fly"
+TextLabel_6.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_6.TextSize = 18
+
+Visuals.Name = "Visuals"
+Visuals.Parent = TabsButtons
+Visuals.BackgroundColor3 = Color3.new(0.262745, 0.25098, 0.635294)
+Visuals.BackgroundTransparency = 1
+Visuals.BorderColor3 = Color3.new(0, 0, 0)
+Visuals.Position = UDim2.new(0.370329708, 0, -0.295277536, 0)
+Visuals.Size = UDim2.new(0, 53, 0, 30)
+Visuals.Font = Enum.Font.Ubuntu
+Visuals.Text = "Visuals"
+Visuals.TextColor3 = Color3.new(1, 1, 1)
+Visuals.TextSize = 14
+
+VisualsTab.Name = "VisualsTab"
+VisualsTab.Parent = Visuals
+VisualsTab.BackgroundColor3 = Color3.new(0.458824, 0.0235294, 0.360784)
+VisualsTab.BackgroundTransparency = 0.25
+VisualsTab.BorderColor3 = Color3.new(0, 0, 0)
+VisualsTab.BorderSizePixel = 0
+VisualsTab.Position = UDim2.new(-4.85873938, 0, 0.899999976, 0)
+VisualsTab.Size = UDim2.new(0, 390, 0, 309)
+VisualsTab.Visible = false
+
+BoxToggle.Name = "BoxToggle"
+BoxToggle.Parent = VisualsTab
+BoxToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+BoxToggle.BorderColor3 = Color3.new(0, 0, 0)
+BoxToggle.Position = UDim2.new(0.0205128212, 0, 0.0906148851, 0)
+BoxToggle.Size = UDim2.new(0, 21, 0, 18)
+BoxToggle.Font = Enum.Font.SourceSans
+BoxToggle.Text = " "
+BoxToggle.TextColor3 = Color3.new(0, 0, 0)
+BoxToggle.TextSize = 14
+
+TextLabel_7.Parent = BoxToggle
+TextLabel_7.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_7.BackgroundTransparency = 1
+TextLabel_7.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(-0.857142866, 0, -0.888888896, 0)
+TextLabel_7.Size = UDim2.new(0, 155, 0, 48)
+TextLabel_7.Font = Enum.Font.Sarpanch
+TextLabel_7.Text = "Box Esp"
+TextLabel_7.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_7.TextSize = 18
+
+DistanceToggle.Name = "DistanceToggle"
+DistanceToggle.Parent = VisualsTab
+DistanceToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+DistanceToggle.BorderColor3 = Color3.new(0, 0, 0)
+DistanceToggle.Position = UDim2.new(0.0205128212, 0, 0.194174752, 0)
+DistanceToggle.Size = UDim2.new(0, 21, 0, 18)
+DistanceToggle.Font = Enum.Font.SourceSans
+DistanceToggle.Text = " "
+DistanceToggle.TextColor3 = Color3.new(0, 0, 0)
+DistanceToggle.TextSize = 14
+
+TextLabel_8.Parent = DistanceToggle
+TextLabel_8.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_8.BackgroundTransparency = 1
+TextLabel_8.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(2, 0, -0.888888896, 0)
+TextLabel_8.Size = UDim2.new(0, 72, 0, 48)
+TextLabel_8.Font = Enum.Font.Sarpanch
+TextLabel_8.Text = "Distance Esp"
+TextLabel_8.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_8.TextSize = 18
+
+WeaponToggle.Name = "WeaponToggle"
+WeaponToggle.Parent = VisualsTab
+WeaponToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+WeaponToggle.BorderColor3 = Color3.new(0, 0, 0)
+WeaponToggle.Position = UDim2.new(0.0205128212, 0, 0.297734618, 0)
+WeaponToggle.Size = UDim2.new(0, 21, 0, 18)
+WeaponToggle.Font = Enum.Font.SourceSans
+WeaponToggle.Text = " "
+WeaponToggle.TextColor3 = Color3.new(0, 0, 0)
+WeaponToggle.TextSize = 14
+
+TextLabel_9.Parent = WeaponToggle
+TextLabel_9.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_9.BackgroundTransparency = 1
+TextLabel_9.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(2, 0, -0.888888896, 0)
+TextLabel_9.Size = UDim2.new(0, 72, 0, 48)
+TextLabel_9.Font = Enum.Font.Sarpanch
+TextLabel_9.Text = "Weapon Esp"
+TextLabel_9.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_9.TextSize = 18
+
+CrosshairToggle.Name = "CrosshairToggle"
+CrosshairToggle.Parent = VisualsTab
+CrosshairToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+CrosshairToggle.BorderColor3 = Color3.new(0, 0, 0)
+CrosshairToggle.Position = UDim2.new(0.0205128212, 0, 0.611650467, 0)
+CrosshairToggle.Size = UDim2.new(0, 21, 0, 18)
+CrosshairToggle.Font = Enum.Font.SourceSans
+CrosshairToggle.Text = " "
+CrosshairToggle.TextColor3 = Color3.new(0, 0, 0)
+CrosshairToggle.TextSize = 14
+
+TextLabel_10.Parent = CrosshairToggle
+TextLabel_10.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_10.BackgroundTransparency = 1
+TextLabel_10.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(2, 0, -0.888888896, 0)
+TextLabel_10.Size = UDim2.new(0, 102, 0, 48)
+TextLabel_10.Font = Enum.Font.Sarpanch
+TextLabel_10.Text = "Enable Crosshair"
+TextLabel_10.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_10.TextSize = 18
+
+SpinToggle.Name = "SpinToggle"
+SpinToggle.Parent = VisualsTab
+SpinToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+SpinToggle.BorderColor3 = Color3.new(0, 0, 0)
+SpinToggle.Position = UDim2.new(0.0205128212, 0, 0.715210378, 0)
+SpinToggle.Size = UDim2.new(0, 21, 0, 18)
+SpinToggle.Font = Enum.Font.SourceSans
+SpinToggle.Text = " "
+SpinToggle.TextColor3 = Color3.new(0, 0, 0)
+SpinToggle.TextSize = 14
+
+TextLabel_11.Parent = SpinToggle
+TextLabel_11.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_11.BackgroundTransparency = 1
+TextLabel_11.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(2, 0, -0.888888896, 0)
+TextLabel_11.Size = UDim2.new(0, 17, 0, 48)
+TextLabel_11.Font = Enum.Font.Sarpanch
+TextLabel_11.Text = "Spin"
+TextLabel_11.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_11.TextSize = 18
+
+BulletToggle.Name = "BulletToggle"
+BulletToggle.Parent = VisualsTab
+BulletToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+BulletToggle.BorderColor3 = Color3.new(0, 0, 0)
+BulletToggle.Position = UDim2.new(0.520512819, 0, 0.0841423944, 0)
+BulletToggle.Size = UDim2.new(0, 21, 0, 18)
+BulletToggle.Font = Enum.Font.SourceSans
+BulletToggle.Text = " "
+BulletToggle.TextColor3 = Color3.new(0, 0, 0)
+BulletToggle.TextSize = 14
+
+TextLabel_12.Parent = BulletToggle
+TextLabel_12.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_12.BackgroundTransparency = 1
+TextLabel_12.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(2, 0, -0.888888896, 0)
+TextLabel_12.Size = UDim2.new(0, 73, 0, 48)
+TextLabel_12.Font = Enum.Font.Sarpanch
+TextLabel_12.Text = "Bullet Tracer"
+TextLabel_12.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_12.TextSize = 18
+
+LifetimeSlider.Name = "LifetimeSlider"
+LifetimeSlider.Parent = VisualsTab
+LifetimeSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+LifetimeSlider.BorderColor3 = Color3.new(0, 0, 0)
+LifetimeSlider.Position = UDim2.new(0.516444147, 0, 0.242718443, 0)
+LifetimeSlider.Size = UDim2.new(0, 164, 0, 17)
+
+Lifetime.Name = "Lifetime"
+Lifetime.Parent = LifetimeSlider
+Lifetime.BackgroundColor3 = Color3.new(1, 1, 1)
+Lifetime.BackgroundTransparency = 1
+Lifetime.BorderColor3 = Color3.new(0, 0, 0)
+Lifetime.BorderSizePixel = 0
+Lifetime.Position = UDim2.new(0.003578, 0, 0, 0)
+Lifetime.Size = UDim2.new(0, 60, 0, -24)
+Lifetime.Font = Enum.Font.SourceSans
+Lifetime.Text = "Lifetime"
+Lifetime.TextColor3 = Color3.new(1, 1, 1)
+Lifetime.TextSize = 20
+
+SlidePart_3.Name = "SlidePart"
+SlidePart_3.Parent = LifetimeSlider
+SlidePart_3.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_3.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_3.BorderSizePixel = 0
+SlidePart_3.Size = UDim2.new(0, 0, 0, 17)
+
+AmbientButton.Name = "AmbientButton"
+AmbientButton.Parent = VisualsTab
+AmbientButton.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+AmbientButton.BorderColor3 = Color3.new(0, 0, 0)
+AmbientButton.Position = UDim2.new(0.515384614, 0, 0.611650467, 0)
+AmbientButton.Size = UDim2.new(0, 84, 0, 18)
+AmbientButton.Font = Enum.Font.Michroma
+AmbientButton.Text = "Ambient"
+AmbientButton.TextColor3 = Color3.new(0.772549, 0.772549, 0.772549)
+AmbientButton.TextSize = 14
+
+Combat.Name = "Combat"
+Combat.Parent = TabsButtons
+Combat.BackgroundColor3 = Color3.new(1, 1, 1)
+Combat.BackgroundTransparency = 1
+Combat.BorderColor3 = Color3.new(0, 0, 0)
+Combat.Position = UDim2.new(0.127536535, 0, -0.295277536, 0)
+Combat.Size = UDim2.new(0, 53, 0, 30)
+Combat.Font = Enum.Font.Ubuntu
+Combat.Text = "Combat"
+Combat.TextColor3 = Color3.new(1, 1, 1)
+Combat.TextSize = 14
+
+CombatTab.Name = "CombatTab"
+CombatTab.Parent = Combat
+CombatTab.BackgroundColor3 = Color3.new(0.458824, 0.0235294, 0.360784)
+CombatTab.BackgroundTransparency = 0.25
+CombatTab.BorderColor3 = Color3.new(0, 0, 0)
+CombatTab.BorderSizePixel = 0
+CombatTab.Position = UDim2.new(-3.85873818, 0, 1, 0)
+CombatTab.Size = UDim2.new(0, 390, 0, 309)
+CombatTab.Visible = false
+
+XSlider.Name = "XSlider"
+XSlider.Parent = CombatTab
+XSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+XSlider.BorderColor3 = Color3.new(0, 0, 0)
+XSlider.Position = UDim2.new(0.0205128212, 0, 0.23624596, 0)
+XSlider.Size = UDim2.new(0, 182, 0, 17)
+
+X.Name = "X"
+X.Parent = XSlider
+X.BackgroundColor3 = Color3.new(1, 1, 1)
+X.BackgroundTransparency = 1
+X.BorderColor3 = Color3.new(0, 0, 0)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(-0.0769230798, 0, 0, 0)
+X.Size = UDim2.new(0, 50, 0, -24)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.new(1, 1, 1)
+X.TextSize = 20
+
+SlidePart_4.Name = "SlidePart"
+SlidePart_4.Parent = XSlider
+SlidePart_4.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_4.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_4.BorderSizePixel = 0
+SlidePart_4.Size = UDim2.new(0, 0, 0, 17)
+
+YSlider.Name = "YSlider"
+YSlider.Parent = CombatTab
+YSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+YSlider.BorderColor3 = Color3.new(0, 0, 0)
+YSlider.Position = UDim2.new(0.0205128212, 0, 0.359223306, 0)
+YSlider.Size = UDim2.new(0, 182, 0, 17)
+
+Y.Name = "Y"
+Y.Parent = YSlider
+Y.BackgroundColor3 = Color3.new(1, 1, 1)
+Y.BackgroundTransparency = 1
+Y.BorderColor3 = Color3.new(0, 0, 0)
+Y.BorderSizePixel = 0
+Y.Position = UDim2.new(-0.0769230798, 0, 0, 0)
+Y.Size = UDim2.new(0, 50, 0, -24)
+Y.Font = Enum.Font.SourceSans
+Y.Text = "Y"
+Y.TextColor3 = Color3.new(1, 1, 1)
+Y.TextSize = 20
+
+SlidePart_5.Name = "SlidePart"
+SlidePart_5.Parent = YSlider
+SlidePart_5.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_5.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_5.BorderSizePixel = 0
+SlidePart_5.Size = UDim2.new(0, 0, 0, 17)
+
+ZSlider.Name = "ZSlider"
+ZSlider.Parent = CombatTab
+ZSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+ZSlider.BorderColor3 = Color3.new(0, 0, 0)
+ZSlider.Position = UDim2.new(0.0205128212, 0, 0.478964388, 0)
+ZSlider.Size = UDim2.new(0, 182, 0, 17)
+
+Z.Name = "Z"
+Z.Parent = ZSlider
+Z.BackgroundColor3 = Color3.new(1, 1, 1)
+Z.BackgroundTransparency = 1
+Z.BorderColor3 = Color3.new(0, 0, 0)
+Z.BorderSizePixel = 0
+Z.Position = UDim2.new(-0.0769230798, 0, 0, 0)
+Z.Size = UDim2.new(0, 50, 0, -24)
+Z.Font = Enum.Font.SourceSans
+Z.Text = "Z"
+Z.TextColor3 = Color3.new(1, 1, 1)
+Z.TextSize = 20
+
+SlidePart_6.Name = "SlidePart"
+SlidePart_6.Parent = ZSlider
+SlidePart_6.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_6.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_6.BorderSizePixel = 0
+SlidePart_6.Size = UDim2.new(0, 0, 0, 17)
+
+LongneckSlider.Name = "LongneckSlider"
+LongneckSlider.Parent = CombatTab
+LongneckSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+LongneckSlider.BorderColor3 = Color3.new(0, 0, 0)
+LongneckSlider.Position = UDim2.new(0.560033858, 0, 0.23624596, 0)
+LongneckSlider.Size = UDim2.new(0, 164, 0, 17)
+
+LN.Name = "LN"
+LN.Parent = LongneckSlider
+LN.BackgroundColor3 = Color3.new(1, 1, 1)
+LN.BackgroundTransparency = 1
+LN.BorderColor3 = Color3.new(0, 0, 0)
+LN.BorderSizePixel = 0
+LN.Position = UDim2.new(0.0694183707, 0, 0, 0)
+LN.Size = UDim2.new(0, 50, 0, -24)
+LN.Font = Enum.Font.SourceSans
+LN.Text = "Longneck"
+LN.TextColor3 = Color3.new(1, 1, 1)
+LN.TextSize = 20
+
+SlidePart_7.Name = "SlidePart"
+SlidePart_7.Parent = LongneckSlider
+SlidePart_7.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_7.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_7.BorderSizePixel = 0
+SlidePart_7.Size = UDim2.new(0, 0, 0, 17)
+
+SilentToggle.Name = "SilentToggle"
+SilentToggle.Parent = CombatTab
+SilentToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+SilentToggle.BorderColor3 = Color3.new(0, 0, 0)
+SilentToggle.Position = UDim2.new(0.561538458, 0, 0.359223306, 0)
+SilentToggle.Size = UDim2.new(0, 21, 0, 18)
+SilentToggle.Font = Enum.Font.SourceSans
+SilentToggle.Text = " "
+SilentToggle.TextColor3 = Color3.new(0, 0, 0)
+SilentToggle.TextSize = 14
+
+SilentLabel.Name = "SilentLabel"
+SilentLabel.Parent = SilentToggle
+SilentLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+SilentLabel.BackgroundTransparency = 1
+SilentLabel.BorderColor3 = Color3.new(0, 0, 0)
+SilentLabel.BorderSizePixel = 0
+SilentLabel.Position = UDim2.new(0.552374005, 0, -0.277777791, 0)
+SilentLabel.Size = UDim2.new(0, 113, 0, 24)
+SilentLabel.Font = Enum.Font.Sarpanch
+SilentLabel.Text = "Silent Aim"
+SilentLabel.TextColor3 = Color3.new(1, 1, 1)
+SilentLabel.TextSize = 18
+
+ShowFovToggle.Name = "ShowFovToggle"
+ShowFovToggle.Parent = CombatTab
+ShowFovToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+ShowFovToggle.BorderColor3 = Color3.new(0, 0, 0)
+ShowFovToggle.Position = UDim2.new(0.561538458, 0, 0.469255656, 0)
+ShowFovToggle.Size = UDim2.new(0, 21, 0, 18)
+ShowFovToggle.Font = Enum.Font.SourceSans
+ShowFovToggle.Text = " "
+ShowFovToggle.TextColor3 = Color3.new(0, 0, 0)
+ShowFovToggle.TextSize = 14
+
+FovToggle.Name = "FovToggle"
+FovToggle.Parent = ShowFovToggle
+FovToggle.BackgroundColor3 = Color3.new(1, 1, 1)
+FovToggle.BackgroundTransparency = 1
+FovToggle.BorderColor3 = Color3.new(0, 0, 0)
+FovToggle.BorderSizePixel = 0
+FovToggle.Position = UDim2.new(0.552374005, 0, -0.277777791, 0)
+FovToggle.Size = UDim2.new(0, 113, 0, 24)
+FovToggle.Font = Enum.Font.Sarpanch
+FovToggle.Text = "Show Fov"
+FovToggle.TextColor3 = Color3.new(1, 1, 1)
+FovToggle.TextSize = 18
+
+FovSlider.Name = "FovSlider"
+FovSlider.Parent = CombatTab
+FovSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+FovSlider.BorderColor3 = Color3.new(0, 0, 0)
+FovSlider.Position = UDim2.new(0.560033858, 0, 0.624595463, 0)
+FovSlider.Size = UDim2.new(0, 164, 0, 17)
+
+Fov.Name = "Fov"
+Fov.Parent = FovSlider
+Fov.BackgroundColor3 = Color3.new(1, 1, 1)
+Fov.BackgroundTransparency = 1
+Fov.BorderColor3 = Color3.new(0, 0, 0)
+Fov.BorderSizePixel = 0
+Fov.Position = UDim2.new(0.003578, 0, 0, 0)
+Fov.Size = UDim2.new(0, 60, 0, -24)
+Fov.Font = Enum.Font.SourceSans
+Fov.Text = "Fov Size"
+Fov.TextColor3 = Color3.new(1, 1, 1)
+Fov.TextSize = 20
+
+SlidePart_8.Name = "SlidePart"
+SlidePart_8.Parent = FovSlider
+SlidePart_8.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_8.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_8.BorderSizePixel = 0
+SlidePart_8.Size = UDim2.new(0, 0, 0, 17)
+
+LongneckKeybind.Name = "LongneckKeybind"
+LongneckKeybind.Parent = CombatTab
+LongneckKeybind.BackgroundColor3 = Color3.new(1, 1, 1)
+LongneckKeybind.BackgroundTransparency = 1
+LongneckKeybind.BorderColor3 = Color3.new(0, 0, 0)
+LongneckKeybind.BorderSizePixel = 0
+LongneckKeybind.Position = UDim2.new(0.901064515, 0, 0.0355987065, 0)
+LongneckKeybind.Size = UDim2.new(0, 30, 0, 50)
+LongneckKeybind.Font = Enum.Font.SourceSans
+LongneckKeybind.Text = "[...]"
+LongneckKeybind.TextColor3 = Color3.new(1, 1, 1)
+LongneckKeybind.TextSize = 21
+
+HitboxToggle.Name = "HitboxToggle"
+HitboxToggle.Parent = CombatTab
+HitboxToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+HitboxToggle.BorderColor3 = Color3.new(0, 0, 0)
+HitboxToggle.Position = UDim2.new(0.0205128212, 0, 0.0906148851, 0)
+HitboxToggle.Size = UDim2.new(0, 21, 0, 18)
+HitboxToggle.Font = Enum.Font.SourceSans
+HitboxToggle.Text = " "
+HitboxToggle.TextColor3 = Color3.new(0, 0, 0)
+HitboxToggle.TextSize = 14
+
+TextLabel_13.Parent = HitboxToggle
+TextLabel_13.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_13.BackgroundTransparency = 1
+TextLabel_13.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(-0.857142866, 0, -0.888888896, 0)
+TextLabel_13.Size = UDim2.new(0, 200, 0, 48)
+TextLabel_13.Font = Enum.Font.Sarpanch
+TextLabel_13.Text = "Enable Hitbox"
+TextLabel_13.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_13.TextSize = 18
+
+LongneckToggle.Name = "LongneckToggle"
+LongneckToggle.Parent = CombatTab
+LongneckToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+LongneckToggle.BorderColor3 = Color3.new(0, 0, 0)
+LongneckToggle.Position = UDim2.new(0.561538458, 0, 0.0873786435, 0)
+LongneckToggle.Size = UDim2.new(0, 21, 0, 18)
+LongneckToggle.Font = Enum.Font.SourceSans
+LongneckToggle.Text = " "
+LongneckToggle.TextColor3 = Color3.new(0, 0, 0)
+LongneckToggle.TextSize = 14
+
+LongneckLabel.Name = "LongneckLabel"
+LongneckLabel.Parent = LongneckToggle
+LongneckLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+LongneckLabel.BackgroundTransparency = 1
+LongneckLabel.BorderColor3 = Color3.new(0, 0, 0)
+LongneckLabel.BorderSizePixel = 0
+LongneckLabel.Position = UDim2.new(0.552374005, 0, -0.277777791, 0)
+LongneckLabel.Size = UDim2.new(0, 113, 0, 24)
+LongneckLabel.Font = Enum.Font.Sarpanch
+LongneckLabel.Text = "Longneck"
+LongneckLabel.TextColor3 = Color3.new(1, 1, 1)
+LongneckLabel.TextSize = 18
+
+Private.Name = "Private"
+Private.Parent = TabsButtons
+Private.BackgroundColor3 = Color3.new(1, 1, 1)
+Private.BackgroundTransparency = 1
+Private.BorderColor3 = Color3.new(0, 0, 0)
+Private.Position = UDim2.new(-0.107394658, 0, -0.295277536, 0)
+Private.Size = UDim2.new(0, 53, 0, 30)
+Private.Font = Enum.Font.Ubuntu
+Private.Text = "Private"
+Private.TextColor3 = Color3.new(1, 1, 1)
+Private.TextSize = 14
+
+PrivateTab.Name = "PrivateTab"
+PrivateTab.Parent = Private
+PrivateTab.BackgroundColor3 = Color3.new(0.458824, 0.0235294, 0.360784)
+PrivateTab.BackgroundTransparency = 0.25
+PrivateTab.BorderColor3 = Color3.new(0, 0, 0)
+PrivateTab.BorderSizePixel = 0
+PrivateTab.Position = UDim2.new(-2.85873818, 0, 1, 0)
+PrivateTab.Size = UDim2.new(0, 390, 0, 309)
+
+FirerateSlider.Name = "FirerateSlider"
+FirerateSlider.Parent = PrivateTab
+FirerateSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+FirerateSlider.BorderColor3 = Color3.new(0, 0, 0)
+FirerateSlider.Position = UDim2.new(0.0241364315, 0, 0.41747573, 0)
+FirerateSlider.Size = UDim2.new(0, 164, 0, 17)
+
+label.Name = "label"
+label.Parent = FirerateSlider
+label.BackgroundColor3 = Color3.new(1, 1, 1)
+label.BackgroundTransparency = 1
+label.BorderColor3 = Color3.new(0, 0, 0)
+label.BorderSizePixel = 0
+label.Position = UDim2.new(0.003578, 0, 0, 0)
+label.Size = UDim2.new(0, 60, 0, -24)
+label.Font = Enum.Font.SourceSans
+label.Text = "Firerate"
+label.TextColor3 = Color3.new(1, 1, 1)
+label.TextSize = 20
+
+SlidePart_9.Name = "SlidePart"
+SlidePart_9.Parent = FirerateSlider
+SlidePart_9.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_9.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_9.BorderSizePixel = 0
+SlidePart_9.Size = UDim2.new(0, 0, 0, 17)
+
+SpreadSlider.Name = "SpreadSlider"
+SpreadSlider.Parent = PrivateTab
+SpreadSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+SpreadSlider.BorderColor3 = Color3.new(0, 0, 0)
+SpreadSlider.Position = UDim2.new(0.0241364315, 0, 0.262135923, 0)
+SpreadSlider.Size = UDim2.new(0, 164, 0, 17)
+
+label_2.Name = "label"
+label_2.Parent = SpreadSlider
+label_2.BackgroundColor3 = Color3.new(1, 1, 1)
+label_2.BackgroundTransparency = 1
+label_2.BorderColor3 = Color3.new(0, 0, 0)
+label_2.BorderSizePixel = 0
+label_2.Position = UDim2.new(0.003578, 0, 0, 0)
+label_2.Size = UDim2.new(0, 60, 0, -24)
+label_2.Font = Enum.Font.SourceSans
+label_2.Text = "Spread"
+label_2.TextColor3 = Color3.new(1, 1, 1)
+label_2.TextSize = 20
+
+SlidePart_10.Name = "SlidePart"
+SlidePart_10.Parent = SpreadSlider
+SlidePart_10.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_10.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_10.BorderSizePixel = 0
+SlidePart_10.Size = UDim2.new(0, 0, 0, 17)
+
+RecoilSlider.Name = "RecoilSlider"
+RecoilSlider.Parent = PrivateTab
+RecoilSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+RecoilSlider.BorderColor3 = Color3.new(0, 0, 0)
+RecoilSlider.Position = UDim2.new(0.0241364315, 0, 0.110032365, 0)
+RecoilSlider.Size = UDim2.new(0, 164, 0, 17)
+
+label_3.Name = "label"
+label_3.Parent = RecoilSlider
+label_3.BackgroundColor3 = Color3.new(1, 1, 1)
+label_3.BackgroundTransparency = 1
+label_3.BorderColor3 = Color3.new(0, 0, 0)
+label_3.BorderSizePixel = 0
+label_3.Position = UDim2.new(0.003578, 0, 0, 0)
+label_3.Size = UDim2.new(0, 60, 0, -24)
+label_3.Font = Enum.Font.SourceSans
+label_3.Text = "No recoil"
+label_3.TextColor3 = Color3.new(1, 1, 1)
+label_3.TextSize = 20
+
+SlidePart_11.Name = "SlidePart"
+SlidePart_11.Parent = RecoilSlider
+SlidePart_11.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_11.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_11.BorderSizePixel = 0
+SlidePart_11.Size = UDim2.new(0, 0, 0, 17)
+
+XoffsetSlider.Name = "XoffsetSlider"
+XoffsetSlider.Parent = PrivateTab
+XoffsetSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+XoffsetSlider.BorderColor3 = Color3.new(0, 0, 0)
+XoffsetSlider.Position = UDim2.new(0.577982605, 0, 0.116504855, 0)
+XoffsetSlider.Size = UDim2.new(0, 164, 0, 17)
+
+label_4.Name = "label"
+label_4.Parent = XoffsetSlider
+label_4.BackgroundColor3 = Color3.new(1, 1, 1)
+label_4.BackgroundTransparency = 1
+label_4.BorderColor3 = Color3.new(0, 0, 0)
+label_4.BorderSizePixel = 0
+label_4.Position = UDim2.new(0.003578, 0, 0, 0)
+label_4.Size = UDim2.new(0, 60, 0, -24)
+label_4.Font = Enum.Font.SourceSans
+label_4.Text = "X-offset"
+label_4.TextColor3 = Color3.new(1, 1, 1)
+label_4.TextSize = 20
+
+SlidePart_12.Name = "SlidePart"
+SlidePart_12.Parent = XoffsetSlider
+SlidePart_12.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_12.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_12.BorderSizePixel = 0
+SlidePart_12.Size = UDim2.new(0, 0, 0, 17)
+
+Yoffset.Name = "Yoffset"
+Yoffset.Parent = PrivateTab
+Yoffset.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+Yoffset.BorderColor3 = Color3.new(0, 0, 0)
+Yoffset.Position = UDim2.new(0.577982605, 0, 0.268608421, 0)
+Yoffset.Size = UDim2.new(0, 164, 0, 17)
+
+label_5.Name = "label"
+label_5.Parent = Yoffset
+label_5.BackgroundColor3 = Color3.new(1, 1, 1)
+label_5.BackgroundTransparency = 1
+label_5.BorderColor3 = Color3.new(0, 0, 0)
+label_5.BorderSizePixel = 0
+label_5.Position = UDim2.new(0.003578, 0, 0, 0)
+label_5.Size = UDim2.new(0, 60, 0, -24)
+label_5.Font = Enum.Font.SourceSans
+label_5.Text = "Y-offset"
+label_5.TextColor3 = Color3.new(1, 1, 1)
+label_5.TextSize = 20
+
+SlidePart_13.Name = "SlidePart"
+SlidePart_13.Parent = Yoffset
+SlidePart_13.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_13.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_13.BorderSizePixel = 0
+SlidePart_13.Size = UDim2.new(0, 0, 0, 17)
+
+zoffsetSlider.Name = "zoffsetSlider"
+zoffsetSlider.Parent = PrivateTab
+zoffsetSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+zoffsetSlider.BorderColor3 = Color3.new(0, 0, 0)
+zoffsetSlider.Position = UDim2.new(0.577982605, 0, 0.423948228, 0)
+zoffsetSlider.Size = UDim2.new(0, 164, 0, 17)
+
+label_6.Name = "label"
+label_6.Parent = zoffsetSlider
+label_6.BackgroundColor3 = Color3.new(1, 1, 1)
+label_6.BackgroundTransparency = 1
+label_6.BorderColor3 = Color3.new(0, 0, 0)
+label_6.BorderSizePixel = 0
+label_6.Position = UDim2.new(0.003578, 0, 0, 0)
+label_6.Size = UDim2.new(0, 60, 0, -24)
+label_6.Font = Enum.Font.SourceSans
+label_6.Text = "Z-offset"
+label_6.TextColor3 = Color3.new(1, 1, 1)
+label_6.TextSize = 20
+
+SlidePart_14.Name = "SlidePart"
+SlidePart_14.Parent = zoffsetSlider
+SlidePart_14.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_14.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_14.BorderSizePixel = 0
+SlidePart_14.Size = UDim2.new(0, 0, 0, 17)
+
+ModelChangerToggle.Name = "ModelChangerToggle"
+ModelChangerToggle.Parent = PrivateTab
+ModelChangerToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+ModelChangerToggle.BorderColor3 = Color3.new(0, 0, 0)
+ModelChangerToggle.Position = UDim2.new(0.025641026, 0, 0.524271846, 0)
+ModelChangerToggle.Size = UDim2.new(0, 21, 0, 18)
+ModelChangerToggle.Font = Enum.Font.SourceSans
+ModelChangerToggle.Text = " "
+ModelChangerToggle.TextColor3 = Color3.new(0, 0, 0)
+ModelChangerToggle.TextSize = 14
+
+Modelchanger.Name = "Modelchanger"
+Modelchanger.Parent = ModelChangerToggle
+Modelchanger.BackgroundColor3 = Color3.new(1, 1, 1)
+Modelchanger.BackgroundTransparency = 1
+Modelchanger.BorderColor3 = Color3.new(0, 0, 0)
+Modelchanger.BorderSizePixel = 0
+Modelchanger.Position = UDim2.new(1.17142165, 0, -0.166666672, 0)
+Modelchanger.Size = UDim2.new(0, 113, 0, 24)
+Modelchanger.Font = Enum.Font.Sarpanch
+Modelchanger.Text = "Modelchanger"
+Modelchanger.TextColor3 = Color3.new(1, 1, 1)
+Modelchanger.TextSize = 18
+
+HitboxOveriderToggle.Name = "HitboxOveriderToggle"
+HitboxOveriderToggle.Parent = PrivateTab
+HitboxOveriderToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+HitboxOveriderToggle.BorderColor3 = Color3.new(0, 0, 0)
+HitboxOveriderToggle.Position = UDim2.new(0.025641026, 0, 0.618122995, 0)
+HitboxOveriderToggle.Size = UDim2.new(0, 21, 0, 18)
+HitboxOveriderToggle.Font = Enum.Font.SourceSans
+HitboxOveriderToggle.Text = " "
+HitboxOveriderToggle.TextColor3 = Color3.new(0, 0, 0)
+HitboxOveriderToggle.TextSize = 14
+
+overrider.Name = "overrider"
+overrider.Parent = HitboxOveriderToggle
+overrider.BackgroundColor3 = Color3.new(1, 1, 1)
+overrider.BackgroundTransparency = 1
+overrider.BorderColor3 = Color3.new(0, 0, 0)
+overrider.BorderSizePixel = 0
+overrider.Position = UDim2.new(1.31427872, 0, -0.166666672, 0)
+overrider.Size = UDim2.new(0, 113, 0, 24)
+overrider.Font = Enum.Font.Sarpanch
+overrider.Text = "HitboxOverider"
+overrider.TextColor3 = Color3.new(1, 1, 1)
+overrider.TextSize = 18
+
+AspectRatioToggle.Name = "AspectRatioToggle"
+AspectRatioToggle.Parent = PrivateTab
+AspectRatioToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+AspectRatioToggle.BorderColor3 = Color3.new(0, 0, 0)
+AspectRatioToggle.Position = UDim2.new(0.579487205, 0, 0.533980608, 0)
+AspectRatioToggle.Size = UDim2.new(0, 21, 0, 18)
+AspectRatioToggle.Font = Enum.Font.SourceSans
+AspectRatioToggle.Text = " "
+AspectRatioToggle.TextColor3 = Color3.new(0, 0, 0)
+AspectRatioToggle.TextSize = 14
+
+ratio.Name = "ratio"
+ratio.Parent = AspectRatioToggle
+ratio.BackgroundColor3 = Color3.new(1, 1, 1)
+ratio.BackgroundTransparency = 1
+ratio.BorderColor3 = Color3.new(0, 0, 0)
+ratio.BorderSizePixel = 0
+ratio.Position = UDim2.new(1.31427872, 0, -0.166666672, 0)
+ratio.Size = UDim2.new(0, 113, 0, 24)
+ratio.Font = Enum.Font.Sarpanch
+ratio.Text = "Aspect Ratio"
+ratio.TextColor3 = Color3.new(1, 1, 1)
+ratio.TextSize = 18
+
+ratioSlider.Name = "ratioSlider"
+ratioSlider.Parent = PrivateTab
+ratioSlider.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+ratioSlider.BorderColor3 = Color3.new(0, 0, 0)
+ratioSlider.Position = UDim2.new(0.577982605, 0, 0.676375389, 0)
+ratioSlider.Size = UDim2.new(0, 164, 0, 17)
+
+label_7.Name = "label"
+label_7.Parent = ratioSlider
+label_7.BackgroundColor3 = Color3.new(1, 1, 1)
+label_7.BackgroundTransparency = 1
+label_7.BorderColor3 = Color3.new(0, 0, 0)
+label_7.BorderSizePixel = 0
+label_7.Position = UDim2.new(0.003578, 0, 0, 0)
+label_7.Size = UDim2.new(0, 41, 0, -24)
+label_7.Font = Enum.Font.SourceSans
+label_7.Text = "Value"
+label_7.TextColor3 = Color3.new(1, 1, 1)
+label_7.TextSize = 20
+
+SlidePart_15.Name = "SlidePart"
+SlidePart_15.Parent = ratioSlider
+SlidePart_15.BackgroundColor3 = Color3.new(1, 1, 1)
+SlidePart_15.BorderColor3 = Color3.new(0, 0, 0)
+SlidePart_15.BorderSizePixel = 0
+SlidePart_15.Size = UDim2.new(0, 0, 0, 17)
+
+NoSlowdownToggle.Name = "NoSlowdownToggle"
+NoSlowdownToggle.Parent = PrivateTab
+NoSlowdownToggle.BackgroundColor3 = Color3.new(0.32549, 0.0156863, 0.258824)
+NoSlowdownToggle.BorderColor3 = Color3.new(0, 0, 0)
+NoSlowdownToggle.Position = UDim2.new(0.025641026, 0, 0.705501616, 0)
+NoSlowdownToggle.Size = UDim2.new(0, 21, 0, 18)
+NoSlowdownToggle.Font = Enum.Font.SourceSans
+NoSlowdownToggle.Text = " "
+NoSlowdownToggle.TextColor3 = Color3.new(0, 0, 0)
+NoSlowdownToggle.TextSize = 14
+
+noslowdown.Name = "noslowdown"
+noslowdown.Parent = NoSlowdownToggle
+noslowdown.BackgroundColor3 = Color3.new(1, 1, 1)
+noslowdown.BackgroundTransparency = 1
+noslowdown.BorderColor3 = Color3.new(0, 0, 0)
+noslowdown.BorderSizePixel = 0
+noslowdown.Position = UDim2.new(0.980945408, 0, -0.166666672, 0)
+noslowdown.Size = UDim2.new(0, 113, 0, 24)
+noslowdown.Font = Enum.Font.Sarpanch
+noslowdown.Text = "No slowdown"
+noslowdown.TextColor3 = Color3.new(1, 1, 1)
+noslowdown.TextSize = 18
+local selectedColor = Color3.new(0.647059, 0.192157, 0.533333) 
+local defaultColor = Color3.new(1, 1, 1) 
+
+local function showTab(tab)
+	MiscTab.Visible = tab == Misc
+	VisualsTab.Visible = tab == Visuals
+	CombatTab.Visible = tab == Combat
+	PrivateTab.Visible = tab == Private
+
+
+	Settings.TextColor3 = defaultColor
+	Misc.TextColor3 = defaultColor
+	Visuals.TextColor3 = defaultColor
+	Combat.TextColor3 = defaultColor
+	Private.TextColor3 = defaultColor
+
+	
+	tab.TextColor3 = selectedColor
+end
+
+Settings.MouseButton1Click:Connect(function()
+	showTab(Settings)
+end)
+
+Misc.MouseButton1Click:Connect(function()
+	showTab(Misc)
+end)
+
+Visuals.MouseButton1Click:Connect(function()
+	showTab(Visuals)
+end)
+
+Combat.MouseButton1Click:Connect(function()
+	showTab(Combat)
+end)
+
+Private.MouseButton1Click:Connect(function()
+	showTab(Private)
+end)
+local selectedColor = Color3.new(0.647059, 0.192157, 0.533333) 
+local defaultColor = Color3.new(0.32549, 0.0156863, 0.258824) 
+
+local function toggleColor(button)
+	if button.BackgroundColor3 == defaultColor then
+		button.BackgroundColor3 = selectedColor
+	else
+		button.BackgroundColor3 = defaultColor
+	end
+end
+
+
+BloodToggle.MouseButton1Click:Connect(function()
+	toggleColor(BloodToggle)
+end)
+
+LootAllToggle.MouseButton1Click:Connect(function()
+	toggleColor(LootAllToggle)
+end)
+
+JumpshootToggle.MouseButton1Click:Connect(function()
+	toggleColor(JumpshootToggle)
+end)
+
+RemgrassToggle.MouseButton1Click:Connect(function()
+	toggleColor(RemgrassToggle)
+end)
+
+XrayToggle.MouseButton1Click:Connect(function()
+	toggleColor(XrayToggle)
+end)
+
+AtvToggle.MouseButton1Click:Connect(function()
+	toggleColor(AtvToggle)
+end)
+
+BoxToggle.MouseButton1Click:Connect(function()
+	toggleColor(BoxToggle)
+end)
+
+DistanceToggle.MouseButton1Click:Connect(function()
+	toggleColor(DistanceToggle)
+end)
+
+WeaponToggle.MouseButton1Click:Connect(function()
+	toggleColor(WeaponToggle)
+end)
+
+CrosshairToggle.MouseButton1Click:Connect(function()
+	toggleColor(CrosshairToggle)
+end)
+
+SpinToggle.MouseButton1Click:Connect(function()
+	toggleColor(SpinToggle)
+end)
+
+BulletToggle.MouseButton1Click:Connect(function()
+	toggleColor(BulletToggle)
+end)
+
+HitboxToggle.MouseButton1Click:Connect(function()
+	toggleColor(HitboxToggle)
+end)
+
+LongneckToggle.MouseButton1Click:Connect(function()
+	toggleColor(LongneckToggle)
+end)
+
+SilentToggle.MouseButton1Click:Connect(function()
+	toggleColor(SilentToggle)
+end)
+
+ShowFovToggle.MouseButton1Click:Connect(function()
+	toggleColor(ShowFovToggle)
+end)
+
+ModelChangerToggle.MouseButton1Click:Connect(function()
+	toggleColor(ModelChangerToggle)
+end)
+
+HitboxOveriderToggle.MouseButton1Click:Connect(function()
+	toggleColor(HitboxOveriderToggle)
+end)
+
+AspectRatioToggle.MouseButton1Click:Connect(function()
+	toggleColor(AspectRatioToggle)
+end)
+
+NoSlowdownToggle.MouseButton1Click:Connect(function()
+	toggleColor(NoSlowdownToggle)
+end)
+local function createSlider(slider, label, maxValue, step)
+	local slidePart = slider:FindFirstChild("SlidePart")
+	local valueLabel = Instance.new("TextLabel")
+	valueLabel.Name = "ValueLabel"
+	valueLabel.Parent = slider
+	valueLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+	valueLabel.BackgroundTransparency = 1
+	valueLabel.BorderColor3 = Color3.new(0, 0, 0)
+	valueLabel.BorderSizePixel = 0
+	valueLabel.Position = UDim2.new(0.9, 0, 0, 0)
+	valueLabel.Size = UDim2.new(0, 30, 0, 17)
+	valueLabel.Font = Enum.Font.SourceSans
+	valueLabel.TextColor3 = Color3.new(1, 1, 1)
+	valueLabel.TextSize = 14
+	valueLabel.Text = tostring(0)
+
+	local function updateSlider(mouseX)
+		local sliderWidth = slider.AbsoluteSize.X
+		local value = math.clamp((mouseX - slider.AbsolutePosition.X) / sliderWidth, 0, 1) * maxValue
+		value = math.floor(value / step) * step
+		valueLabel.Text = tostring(value)
+		slidePart.Size = UDim2.new(value / maxValue, 0, 0, 17)
+		slidePart.BackgroundColor3 = Color3.new(0.647059, 0.192157, 0.533333)
+	end
+
+	local dragging = false
+	local moveConnection
+
+	slider.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			updateSlider(input.Position.X)
+			moveConnection = game:GetService("RunService").RenderStepped:Connect(function()
+				if dragging then
+					local mouse = game.Players.LocalPlayer:GetMouse()
+					updateSlider(mouse.X)
+				end
+			end)
+		end
+	end)
+
+	slider.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = false
+			if moveConnection then
+				moveConnection:Disconnect()
+			end
+		end
+	end)
+
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+			updateSlider(input.Position.X)
+		end
+	end)
+end
+
+createSlider(XSlider, X, 10, 1)
+createSlider(YSlider, Y, 10, 1)
+createSlider(ZSlider, Z, 10, 1)
+createSlider(LongneckSlider, LN, 8, 1)
+createSlider(FovSlider, Fov, 300, 1)
+createSlider(FirerateSlider, label, 100, 1)
+createSlider(SpreadSlider, label_2, 100, 1)
+createSlider(RecoilSlider, label_3, 100, 1)
+createSlider(XoffsetSlider, label_4, 5, 1)
+createSlider(Yoffset, label_5, 5, 1)
+createSlider(zoffsetSlider, label_6, 5, 1)
+createSlider(ratioSlider, label_7, 100, 1)
+createSlider(SpeedSlider, Speed, 90, 1)
+createSlider(TransparencySlider, Transparency, 1, 0.100)
+createSlider(LifetimeSlider, Lifetime, 5, 1)
+local function setKeybind(keybindButton)
+	local listening = false
+
+	keybindButton.MouseButton1Click:Connect(function()
+		if not listening then
+			listening = true
+			keybindButton.Text = "[...]"
+		end
+	end)
+
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+		if listening and not gameProcessed then
+			if input.KeyCode ~= Enum.KeyCode.Unknown then
+				keybindButton.Text = "[" .. input.KeyCode.Name .. "]"
+				listening = false
+			end
+		end
+	end)
+end
+
+setKeybind(LootAllKeybind)
+setKeybind(AtvKeybind)
+setKeybind(XrayKeybind)
+setKeybind(LongneckKeybind)
+
+
+LootAllKeybind.Text = "[None]"
+AtvKeybind.Text = "[None]"
+XrayKeybind.Text = "[None]"
+LongneckKeybind.Text = "[None]"
+local function CreateCustomCharacter(Mesh, Texture, Size)
+    local part = Instance.new("Part", workspace)
+    part.CFrame = workspace.Ignore.FPSArms.HumanoidRootPart.CFrame
+    part.CanCollide = false
+    part.Name = "DeleteMeForNone"
+    local mesh = Instance.new("SpecialMesh", part)
+    mesh.MeshType = Enum.MeshType.FileMesh
+    mesh.Scale = Size
+    mesh.TextureId = "http://www.roblox.com/asset/?id=" .. Texture
+    mesh.MeshId = "http://www.roblox.com/asset/?id=" .. Mesh
+    local weld = Instance.new("Weld", mesh)
+    weld.Part0 = workspace.Ignore.FPSArms.HumanoidRootPart
+    weld.Part1 = part
+end
+
+local CharacterType = "AnimeGirl"
+local CustomCharacter = false
+local function UpdateCharacter()
+    for _, child in pairs(workspace:GetChildren()) do
+        if child.Name == "DeleteMeForNone" then
+            child:Destroy()
+        end
+    end
+    if not CustomCharacter then
+        return
+    end
+
+    local characterData = {
+        AnimeGirl = { Mesh = 752599066, Texture = 752599541, Size = Vector3.new(0.7, 0.7, 0.7) }
+    }
+    local character = characterData[CharacterType]
+    if character then
+        CreateCustomCharacter(character.Mesh, character.Texture, character.Size)
+    end
+end
+local function ToggleCustomCharacter(value)
+    CustomCharacter = value
+    UpdateCharacter()
+end
+ModelChangerToggle.MouseButton1Click:Connect(function()
+    toggleColor(ModelChangerToggle)
+    ToggleCustomCharacter(ModelChangerToggle.BackgroundColor3 == selectedColor)
+end)
